@@ -29,6 +29,8 @@ func (c *WackupConfig) Load() {
 		dir.handleOutputInZip()
 		loadDir(dir.tag, dir.Path, dir.Path, dir.OutputInZip, dir.OutputInZip, zipWriter, dir.Ignores, &dir.WriteHandlers)
 	}
+
+	panic("TODO: Implement files")
 }
 
 func loadDir(tag, rootAbsPath, absPath, rootParent, parent string, zw *zip.Writer, ignores []string, writeHandlers *map[string]string) {
