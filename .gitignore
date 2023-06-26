@@ -1,0 +1,7 @@
+# Dirs
+.vscode/
+
+# Files
+*.zip
+output
+wackup.json
