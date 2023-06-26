@@ -13,7 +13,7 @@ type WackupDirConfig struct {
 	// Files of the specially specified folder.
 	// Why is this necessary?
 	// Let's say you have a json file in a folder and if you are going to take some values from this json file and print a different json as output, you should specify it here.
-	// Because you can print this file in a different way with the writeFn you specify in it.
+	// Because you can print this file in a different way with the function you specify in it.
 	// Unspecified files use a default function.
 	WriteHandlers map[string] /* path */ string/* handler function name */ `json:"writeHandlers"`
 }
