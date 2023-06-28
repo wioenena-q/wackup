@@ -1,7 +1,7 @@
 package config
 
 import (
-	"path"
+	"path/filepath"
 	"strings"
 )
 
@@ -24,6 +24,6 @@ func (d *WackupDirConfig) handlePath(homedir string) {
 
 func (d *WackupDirConfig) handleOutputInZip() {
 	if d.OutputInZip == "" {
-		d.OutputInZip = path.Base(d.Path)
+		d.OutputInZip = filepath.Base(d.Path)
 	}
 }
